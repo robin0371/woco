@@ -9,7 +9,6 @@ Python 3.5
 #### Запуск
 
 ```sh
-$ source .virtualenvs/bin/activate
 $ cd /path/to/woco
 $ python woco.py -p 2 -i test.txt
 ```
