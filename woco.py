@@ -42,9 +42,8 @@ def file_data(file_name):
 def start():
     """Запускает подсчет слов в файле."""
     args = arg_parser.parse_args()
-    processes = args.processes
 
-    pool = multiprocessing.Pool(processes=processes)
+    pool = multiprocessing.Pool(processes=args.processes)
     counters = pool.imap(count_words, file_data(args.input_file), 25)
 
     # Итоговый счетчик
